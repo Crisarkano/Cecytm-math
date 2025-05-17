@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CECY-MATH - Código Python</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #033011ef;
+        }
+        pre {
+            background: hwb(172 10% 23%);
+            color: lab(0% 0 0);
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: hwb(0 0% 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <style>
+            body{
+                background-color:hwb(0 100% 0%);
+            }
+        </style>
+    <img src="C:\Users\Cris🎯🏂👻\Downloads\CECY-MATH_PROYECTO\encabezado.png" alt="Encabezado CECYTEM">
+</div>
+     <h1>CECY-MATH: Código Fuente del Programa</h1>
+    <pre><code>
+print("Ariza Bolaños Cristian Edilberto")
+print("Garcia Romero Gerardo Antonio") 
+print("Bienvenido al CECY-MATH")
+print("Selecciona la operación que deseas realizar")
+print("Promedio")
+print("1. Promedio de 5  calificaciones")
+print("Operaciones Aritmeticas")
+print("2. Suma")
+print("3. Resta")
+print("4. Multiplicación")
+print("5. División")
+print("6. Raíz Cuadrada")
+print("7. Potencia")
+print("8.Porcentaje")
+print("Geometría y Trigonometia")
+print("9. Área de un Triángulo")
+print("10. Perímetro de un Triángulo")
+print("11.Área de un cuadrado")
+print("12.Perímetro de un cuadrado")
+opcion = input("Selecciona una opción (1-12): ")
+if opcion == "1":
+    print("Has seleccionado Promedio: El promedio es el resultado de sumar varios valores y dividir esa suma entre la cantidad de valores.")
+    print("Formula de Promedio=(cal1+cal2+cal3+cal4+cal5)/5")
+    print("Pasos: Ingresa 5 calificaciones y se calculará el promedio.")
+    cal1 = float(input("Calificación 1: "))
+    cal2 = float(input("Calificación 2: "))
+    cal3 = float(input("Calificación 3: "))
+    cal4 = float(input("Calificación 4: "))
+    cal5 = float(input("Calificación 5: "))
+    suma = cal1 + cal2 + cal3 + cal4 + cal5
+    promedio = suma / 5
+    print(f"La suma de las calificaciones es: {suma}")
+    print(f"El promedio de las calificaciones es: {round(promedio, 2)}")
+elif opcion == "2":
+    print("Has seleccionado Suma: La suma consiste en agregar dos números.")
+    print("Formula de Suma=a+b")
+    print("Pasos: Ingresa dos números y se sumarán.")
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    resultado = a + b
+    print(f"El resultado de la suma es: {round(resultado, 2)}")
+elif opcion == "3":
+    print(" Has seleccionado Resta: La resta consiste en sustraer un número de otro.")
+    print("Formula de Resta=a-b")
+    print("Pasos: Ingresa dos números y se restará el segundo del primero.")
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    resultado = a - b
+    print(f"El resultado de la resta es: {round(resultado, 2)}")
+elif opcion == "4":
+    print("Has seleccionado Multiplicación: La multiplicación consiste en calcular el producto de dos números.")
+    print("Formula de Multiplicación=a*b")
+    print("Pasos: Ingresa dos números y se multiplicarán.")
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    resultado = a * b
+    print(f"El resultado de la multiplicación es: {round(resultado, 2)}")
+elif opcion == "5":
+    print("Has seleccionado División: La división consiste en dividir un número entre otro.")
+    print("Formula de Division=a/b")
+    print("Pasos: Ingresa el numerador y el denominador. El numerador se dividirá entre el denominador.")
+    a = float(input("Ingresa el numerador: "))
+    b = float(input("Ingresa el denominador: "))
+    if b != 0:
+        resultado = a / b
+        print(f"El resultado de la división es: {round(resultado, 2)}")
+    else:
+        print("Error: No se puede dividir entre cero.")
+elif opcion == "6":
+    print("Has seleccionado Raíz Cuadrada: La raíz cuadrada es el número que, al multiplicarse por sí mismo, da como resultado el número original.")
+    print("Formula de Raiz Cuadrada=√a")
+    print("Pasos: Ingresa un número y se calculará su raíz cuadrada.")
+    a = float(input("Ingresa el número: "))
+    if a >= 0:
+        resultado = a ** 0.5
+        print(f"La raíz cuadrada de {a} es: {round(resultado, 2)}")
+    else:
+        print("Error: No se puede calcular la raíz cuadrada de un número negativo.")
+elif opcion == "7":
+    print("Has seleccionado Potencia: La potencia consiste en elevar un número (base) a un exponente.")
+    print("Formula de Potencia=a^b")
+    print("Pasos: Ingresa la base y el exponente. Se calculará la base elevada al exponente.")
+    base = float(input("Ingresa la base: "))
+    exponente = float(input("Ingresa el exponente: "))
+    resultado = base ** exponente
+    print(f"El resultado de {base} elevado a la {exponente} es: {round(resultado, 2)}")
+elif opcion == "8":
+    print("Has seleccionado Porcentaje: El porcentaje es una forma de expresar un número como una fracción de 100.")
+    print("Formula de Porcentaje=(numero*porcentaje)/100")
+    print("Pasos: Ingresa el número y el porcentaje que deseas calcular.")
+    numero = float(input("Ingresa el número: "))
+    porcentaje = float(input("Ingresa el porcentaje: "))
+    if porcentaje < 0 or porcentaje > 100:
+        print("El porcentaje debe estar entre 0 y 100.")
+    else:
+        resultado = (numero * porcentaje) / 100
+        print(f"El {porcentaje}% de {numero} es: {round(resultado, 2)}")
+elif opcion == "9":
+    print("Has seleccionado Área de un Triángulo: El área de un triángulo se calcula como (base * altura) / 2.")
+    print("Formula de Area=(base*altura)/2")
+    print("Pasos: Ingresa la base y la altura del triángulo. Se calculará el área.")
+    base = float(input("Ingresa la base del triángulo: "))
+    altura = float(input("Ingresa la altura del triángulo: "))
+    resultado = (base * altura) / 2
+    print(f"El área del triángulo es: {round(resultado, 2)}")
+elif opcion == "10":
+    print("Has seleccionado Perímetro de un Triángulo: El perímetro es la suma de los tres lados del triángulo.")
+    print("Formula de Perimetro=lado1+lado2+lado3")
+    print("Pasos: Ingresa las longitudes de los tres lados del triángulo. Se sumarán para obtener el perímetro.")
+    lado1 = float(input("Ingresa el primer lado: "))
+    lado2 = float(input("Ingresa el segundo lado: "))
+    lado3 = float(input("Ingresa el tercer lado: "))
+    resultado = lado1 + lado2 + lado3
+    print(f"El perímetro del triángulo es: {round(resultado, 2)}")
+elif opcion == "11":
+    print("Has seleccionado Área de un Cuadrado: El área de un cuadrado se calcula como lado x lado.")
+    print("Formula de Area=lado*lado")
+    print("Pasos: Ingresa la longitud del lado del cuadrado. Se calculará el área.")
+    lado = float(input("Ingresa la longitud del lado del cuadrado: "))
+    resultado = lado ** 2
+    print(f"El área del cuadrado es: {round(resultado, 2)}")
+elif opcion == "12":
+    print("Has seleccionado Perímetro de un Cuadrado: El perímetro de un cuadrado se calcula sumando 4 veces su lado.")
+    print("Formula de Perimetro=4*lado")
+    print("Pasos: Ingresa la longitud del lado del cuadrado. Se calculará el perímetro.")
+    lado = float(input("Ingresa la longitud del lado del cuadrado: "))
+    resultado = 4 * lado
+    print(f"El perímetro del cuadrado es: {round(resultado, 2)}")
+else:
+    print("Opción no válida. Por favor, selecciona una opción del 1 al 12.")
+    print("Opción no válida. Por favor, selecciona una opción del 1 al 12.")
+    print("Opción no válida. Por favor, selecciona una opción del 1 al 12.")
+print("Gracias por utilizar la aplicación CECY-MATH.")
+</code></pre>
+    <div class="footer">
+        &copy; 2025 Cristian Edilberto Ariza Bolaños - Grupo 201 - CECYTEM La Paz
+    </div>
+</body>
+</html>
